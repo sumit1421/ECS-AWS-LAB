@@ -7,7 +7,7 @@ RUN mvn package
 
 FROM tomcat:latest
 
-LABEL maintainer="Akshat Gupta"
+LABEL maintainer="Sumit"
 
 COPY --from=build /home/app/target/LoginWebApp-1.war /usr/local/tomcat/webapps/LoginWebApp-1.war
 #ADD ./target/LoginWebApp-1.war /usr/local/tomcat/webapps/
